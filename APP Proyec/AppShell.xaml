@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="APP_Proyec.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:APP_Proyec"
+    xmlns:views="clr-namespace:APP_Proyec.Views"
+    Title="APP_Proyec">
+
+    <TabBar>
+        <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        <ShellContent Title="Productos" ContentTemplate="{DataTemplate views:ProductsPage}" Route="Products" />
+        <ShellContent Title="Top" ContentTemplate="{DataTemplate views:TopSellingPage}" Route="TopSelling" />
+        <ShellContent Title="Pedidos" ContentTemplate="{DataTemplate views:OrdersPage}" Route="Orders" />
+        <ShellContent Title="Cuentas" ContentTemplate="{DataTemplate views:PendingAccountsPage}" Route="PendingAccounts" />
+    </TabBar>
+
+</Shell>

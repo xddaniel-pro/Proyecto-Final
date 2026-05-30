@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../proyec pag/proyec pag/proyec pag.csproj" />
+  <Project Path="APIs proyec/APIs proyec.csproj" />
+  <Project Path="APP Proyec/APP Proyec.csproj" Id="7367b20c-0b0b-4953-843d-48e00479f4bb">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP_Proyec.Views.PendingAccountsPage"
+             Title="Cuentas pendientes">
+
+    <CollectionView x:Name="AccountsCollection" ItemsSource="{Binding Accounts}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Margin="8" Padding="8">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Name}" FontAttributes="Bold" />
+                        <Label Text="{Binding Balance, StringFormat='Saldo: {0:C}'}" />
+                        <Label Text="{Binding Status}" />
+                    </VerticalStackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+</ContentPage>
